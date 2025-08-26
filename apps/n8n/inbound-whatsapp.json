@@ -1,0 +1,17 @@
+{
+  "nodes": [
+    {"id": "webhook", "type": "webhook", "params": {"path": "/webhooks/whatsapp", "method": "POST"}},
+    {"id": "normalize", "type": "function", "params": {"code": "// Normaliza mensaje"}},
+    {"id": "ia", "type": "openai", "params": {"action": "intent+sentiment"}},
+    {"id": "score", "type": "function", "params": {"code": "// Asigna score"}},
+    {"id": "reply", "type": "function", "params": {"code": "// Genera respuesta"}},
+    {"id": "persist", "type": "postgres", "params": {"table": "messages"}}
+  ],
+  "connections": [
+    ["webhook", "normalize"],
+    ["normalize", "ia"],
+    ["ia", "score"],
+    ["score", "reply"],
+    ["reply", "persist"]
+  ]
+}

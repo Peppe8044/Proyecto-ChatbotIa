@@ -1,0 +1,13 @@
+{
+  "name": "saas-ventas-247-cl",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "concurrently \"cd apps/api && npm run dev\" \"cd apps/web && npm run dev\"",
+    "build": "concurrently \"cd apps/api && npm run build\" \"cd apps/web && npm run build\"",
+    "db:migrate": "psql -h localhost -U postgres -d saasdb -f sql/schema.sql",
+    "db:seed": "psql -h localhost -U postgres -d saasdb -f sql/seeds.sql"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
