@@ -1,6 +1,7 @@
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import * as React from "react";
+import { Navbar } from "../../components/navbar"
+import { Footer } from "../../components/footer"
+import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card"
 
 export const metadata = {
   title: "Política de Privacidad — ChatVentas AI",

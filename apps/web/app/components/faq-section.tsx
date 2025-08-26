@@ -1,6 +1,6 @@
 "use client"
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion"
 import { siteContent } from "@/lib/content"
 import { motion } from "framer-motion"
 

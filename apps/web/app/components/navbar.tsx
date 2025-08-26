@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
-import { ThemeToggle } from "../theme-toggle"
+import { ThemeToggle } from "./theme-toggle"
 import { Menu, MessageSquare } from "lucide-react"
 import { siteContent } from "../../lib/content"
 
@@ -22,7 +22,7 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+  <div className="container mx-auto max-w-5xl flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <MessageSquare className="h-6 w-6 text-accent" />
           <span className="font-montserrat font-bold text-xl">{siteContent.brand.name}</span>

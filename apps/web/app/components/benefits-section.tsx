@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
 import { Clock, Brain, Target, CreditCard, BarChart3, Shield } from "lucide-react"
 import { siteContent } from "@/lib/content"
 import { motion } from "framer-motion"

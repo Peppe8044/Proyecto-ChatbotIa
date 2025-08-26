@@ -1,9 +1,9 @@
 "use client"
 
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { FunnelChart } from "@/components/funnel-chart"
+import { Badge } from "./ui/badge"
+import { Button } from "./ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
+import { FunnelChart } from "./funnel-chart"
 import { CheckCircle, TrendingUp, CreditCard, Zap } from "lucide-react"
 import { siteContent } from "@/lib/content"
 import { motion } from "framer-motion"

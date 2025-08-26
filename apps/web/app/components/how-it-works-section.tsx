@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "./ui/card"
 import { siteContent } from "@/lib/content"
 import { motion } from "framer-motion"
 

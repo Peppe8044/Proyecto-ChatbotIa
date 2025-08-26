@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Inter, Montserrat } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "./components/theme-provider"
 import "./globals.css"
 
 const inter = Inter({
@@ -64,7 +64,7 @@ export default function RootLayout({
       lang="es-CL"
       className={`${GeistSans.variable} ${GeistMono.variable} ${inter.variable} ${montserrat.variable}`}
     >
-      <body className="font-sans antialiased">
+  <body className="font-sans antialiased px-4">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
