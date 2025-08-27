@@ -60,11 +60,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html
-      lang="es-CL"
-      className={`${GeistSans.variable} ${GeistMono.variable} ${inter.variable} ${montserrat.variable}`}
-    >
-  <body className="font-sans antialiased px-4">
+    <html lang="es-CL" className={`${GeistSans.variable} ${GeistMono.variable} ${inter.variable} ${montserrat.variable}`}>
+      <body className="font-sans antialiased px-4">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
